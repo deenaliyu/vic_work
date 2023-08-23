@@ -1,0 +1,150 @@
+.nav-text{
+    font-size: 14px;
+}
+
+
+@font-face {
+    font-family: 'clash';
+    src: url('/assets/Fonts/WEB/fonts/ClashDisplay-Light.woff') format('woff'),
+         url('/assets/Fonts/WEB/fonts/ClashDisplay-Light.woff2') format('woff2');
+    /* Add additional font formats as needed */
+  
+  }
+
+  @font-face {
+    font-family: 'inter';
+    src: url('/assets/Fonts/inter/Inter-Light.ttf') format('ttf')
+    
+    /* Add additional font formats as needed */
+  
+  }
+ 
+  body{
+    font-family: 'clash', sans-serif;
+    background-color: #16171B;
+  }
+ .connect{
+    background-color: #16171B;
+ }
+
+  .haeder{
+    background-color: #16171B;
+  }
+  .head2{
+    color: #F7006E;
+    font-weight: 800;
+  }
+  .head{
+    font-weight: 800;
+  }
+
+  .head3{
+    font-size: 25px;
+    color: #A39C9C;
+    font-family: 'inter', sans-serif;
+    font-weight: normal;
+  }
+
+  .bnt{
+    padding: 2px 7px;
+    border: 1px solid #F7006E;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    gap: 30px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  #checkbox {
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #checkbox:checked {
+    background: white;
+  }
+  
+  #checkbox::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: inherit;
+    width: 36px;
+    height: 36px;
+    background: black;
+    transition: inherit;
+  }
+  
+  #checkbox::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: calc(100% + 36px);
+    border-radius: inherit;
+    width: 36px;
+    height: 36px;
+    background: white;
+    transition: inherit;
+  }
+  
+   #checkbox:checked::before {
+    left: calc(100% - 38px);
+    background: black;
+  }
+  
+   #checkbox:checked::after {
+    right: 12px;
+    background: white;
+  }
+
+  .img1{
+    margin-top: -150px;
+   }
+
+   .ing{
+    width: 180%;
+      }
+
+.footer{
+    background-color: #F7006E;
+}
+.fot{
+    font-weight: bold;
+    font-family: 'inter';
+}
+
+
+   @media only screen and (max-width: 600px) {
+   .img1{
+    margin-top: 10px;
+   }
+
+   .haeder{
+    background-color: #16171B;
+  }
+  .head2{
+    color: #F7006E;
+    font-weight: 800;
+  }
+  .head{
+    font-weight: 800;
+  }
+  .ing{
+width: 100%;
+  }
+  }
